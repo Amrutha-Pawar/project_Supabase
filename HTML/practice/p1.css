@@ -1,0 +1,30 @@
+header {
+    /* background-color: rgb(197, 90, 131); */
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.nav-bar b{
+    margin-right: 15px;
+    justify-content: space-evenly;
+}
+.intro {
+    background-color: rgb(197, 90, 131);
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+}
+@keyframes typing {
+    /* animation : anime 20s linear 4s infinite normal ; */
+    from{width: 0;}
+    to{width: 100%;}
+}
+.anime {
+    font-size: 20px;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    display: inline-block;
+    animation: typing 4s steps(30) normal;
+}

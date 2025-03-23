@@ -1,0 +1,20 @@
+.loader {
+    height: 100px;
+    width: 100px;
+    /* background-color: thistle; */
+    border-radius: 10% ;
+    border: 5px solid black;
+    border-bottom: 5px solid pink;
+    border-right: 5px solid yellow;
+    border-left: 5px solid goldenrod;
+    animation: RotateLoader 2s ease-in 1s 5 normal ;
+}
+
+@keyframes RotateLoader {
+    from { 
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

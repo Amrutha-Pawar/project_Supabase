@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+header {
+    background-color: rgb(208, 32, 100);
+}
+.heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.profile i {
+    font-size: 30px;
+    color:white;
+}
+h1 b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:underline;
+    color: rgb(208, 32, 100);
+}
+.heading {
+    background-color: #0f1111;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.nav-cart i {
+    font-size: 30px;
+    color:white;
+    align-items: end;
+}
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.cart-link {
+    text-decoration: none;
+    color: white;
+}
+.acc-link {
+    text-decoration: none;
+    color: white;
+}
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-color: rgb(255, 202, 210); */
+}
+.box {
+    height: 400px;
+    border: 2px solid black;
+    width: 23%;
+    background-color: white;
+    padding: 10px 20px 10px;
+    margin-top: 5px;
+}
+.box1-img {
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+button {
+    /* background-color: rgb(34, 34, 184); */
+    border-radius: 10%;
+}

@@ -1,0 +1,25 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.login-container {
+    background: linear-gradient(135deg, #c785dc, #78b9dc);
+    padding: 8%;
+    margin: 8%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#ntg {
+    text-align: center;
+    background-color: rgb(110, 110, 207);
+}
+
+a {
+    color: black;
+}
+

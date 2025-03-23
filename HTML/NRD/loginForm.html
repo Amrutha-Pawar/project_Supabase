@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .error {
+            color: rgb(222, 40, 40);
+            font-size: 14px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        div button {
+            border-radius: 5%;
+            align-items: center;
+            font-weight: bold;
+            padding:0px 10px ;
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit = "return validateForm()" action="Registration_login.html" class="login-container">
+
+        <h1><b>Login Form</b></h1>
+        <br>
+        <br>
+        <div class="form-group">
+            <label>
+                <b>username : </b><input type="text" id="Username" name="Username" >
+                <span id="usernameError" class="error"></span>
+            </label>
+        </div>    
+            <br>
+        <div class="form-group">
+            <label >
+                <b>password :    </b><input type="password"  id="Password"  name="Password" >
+                <span id="passwordError" class="error"></span>
+            </label>
+        </div>    
+            <br>
+        
+        <br>
+
+        <a href="forgotPass.html" target="_main" > <b>Forgot Password </b> </a> 
+        <br>
+        <br>
+
+        <div >
+            <button type="submit" class="login"> 
+                login  
+            </button>
+        </div>
+
+    </form>
+
+    <script>
+        function validateForm()
+        {
+            let username = document.getElementById("Username").value;
+            let password = document.getElementById("Password").value;
+
+            let usernameError = document.getElementById("usernameError");
+            let passwordError = document.getElementById("passwordError");
+
+            let valid = true;
+
+            usernameError.innerText = "";
+            passwordError.innerText = "";
+
+            if(username.trim() === "")
+            {
+                usernameError.innerText = "Username cannot be empty";
+                valid = false;
+            }
+
+            let passwordMessage =  validatePassword(password);
+
+            if(passwordMessage)
+            {
+               passwordError.innerText = passwordMessage;
+               valid = false;
+            }
+           return valid;
+        }
+
+        function validatePassword(password)
+        {
+            if(password.length < 8)
+            {
+                return "password must be atleast 8 characters";
+            }
+            if(!/[A-Z]/.test(password))
+            {
+                return "password must have atleast one uppercase letter";
+            }
+            if(!/[a-z]/.test(password))
+            {
+                return "password must have atleast one lowercase letter";
+            }
+            if(!/[0-9]/.test(password))
+            {
+                return "password must have atleast one number";
+            }
+            if(!/[@#$%^&*!]/.test(password))
+            {
+                return "password must have atleast one special character";
+            }
+            return ""; //no error password is strong
+        }
+    </script>
+
+</body>
+</html>

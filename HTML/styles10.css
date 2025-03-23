@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+}
+
+input, button {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#shopList {
+    margin-top: 20px;
+}

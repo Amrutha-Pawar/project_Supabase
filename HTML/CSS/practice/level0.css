@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(172, 222, 222);
+}
+
+p {
+    color: brown;
+}
+
+img {
+    width: 20%;
+}
